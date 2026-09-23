@@ -30,7 +30,7 @@ O template fornece inicialmente:
 ## 📁 Estrutura do Template
 
 ```text
-py_newproj_template/
+python_template/
 │
 ├── copier.yml
 ├── README.md
@@ -157,19 +157,27 @@ Existem duas formas principais de utilizar o template:
 
 ## 2. Utilizando o template localmente
 
-Se o repositório estiver disponível localmente:
+Para utilizar este template localmentente é necessário antes baixar o repositório do GitHut para seu PC, execute o seguinte comando para clonar o repositório:
 
-```text
-Documents/
-    ├── py_newproj_template/
-    └── <MEU_PROJETO>/
+```bash
+git clone https://github.com/Cpharles/python_template.git
 ```
+
+Quando o repositório já estiver disponível localmente execute:
 
 Primeiro crie um diretório para o projeto:
 
 ```bash
 mkdir meu_projeto
 cd meu_projeto
+```
+
+Vamos ter algo como:
+
+```text
+Documents/
+    ├── python_template/
+    └── <MEU_PROJETO>/
 ```
 
 Entre no diretório onde deseja criar o novo projeto:
@@ -181,7 +189,7 @@ cd ~/Documents/<MEU_PROJETO>
 Execute o Copier:
 
 ```bash
-copier copy ../py_newproj_template .
+copier copy ../python_template .
 ```
 > [!NOTE]
 > Atenção para o "ponto" ( . ) ao final do comando, garante e força que o projeto seja criado dentro da pasta atual
@@ -211,13 +219,13 @@ Existe a possibilidade de criar seu projeto a partir do GitHub, sem a necessidad
 Exemplo:
 
 ```bash
-copier copy gh:Cpharles/py_newproj_template.git meu_projeto
+copier copy gh:Cpharles/python_template.git meu_projeto
 ```
 
 Ou utilizando a URL completa:
 
 ```bash
-copier copy https://github.com/Cpharles/py_newproj_template.git meu_projeto
+copier copy https://github.com/Cpharles/python_template.git meu_projeto
 ```
 
 Depois:
@@ -467,4 +475,4 @@ MIT
 
 Repositório:
 
-`https://github.com/Cpharles/python_new_proj_template`
+`https://github.com/Cpharles/python_template.git`
