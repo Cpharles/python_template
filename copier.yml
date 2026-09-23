@@ -1,0 +1,46 @@
+_min_copier_version: "9.0.0"
+
+_subdirectory: template
+
+project_name:
+  type: str
+  help: "Nome do projeto"
+  validator: >-
+    {% if not project_name %}
+    O nome do projeto não pode ser vazio.
+    {% endif %}
+
+package_name:
+  type: str
+  help: "Nome do pacote Python"
+  default: "{{ project_name | lower | replace('-', '_') | replace(' ', '_') }}"
+
+description:
+  type: str
+  help: "Descrição do projeto"
+  default: "<DESCRIÇÃO DO PROJETO>"
+
+python_version:
+  type: str
+  help: "Versão mínima do Python"
+  default: "3.12"
+
+author_name:
+  type: str
+  help: "Nome do autor"
+  default: "<NOME DO AUTOR>"
+
+author_email:
+  type: str
+  help: "E-mail do autor"
+  default: "<E-MAIL DO AUTOR>"
+
+use_pytest:
+  type: bool
+  help: "Adicionar configuração do Pytest?"
+  default: true
+
+use_ruff:
+  type: bool
+  help: "Adicionar configuração do Ruff?"
+  default: true
