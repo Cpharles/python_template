@@ -465,7 +465,7 @@ git push -u origin main
 
 ## 📄 Licença
 
-MIT
+:books: [Read license](./LICENSE.txt)
 
 ---
 
@@ -473,6 +473,4 @@ MIT
 
 **Charles**
 
-Repositório:
-
-`https://github.com/Cpharles/python_template.git`
+Repositório: [Repo New project Python Template](https://github.com/Cpharles/python_template.git)
